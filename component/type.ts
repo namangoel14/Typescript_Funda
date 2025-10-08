@@ -70,3 +70,28 @@ function detail(age: number, name: string){
 
 detail(27, "Naman");
 
+
+function age1(): number{
+    return 27;
+}
+
+console.log("Age:", age1());
+
+async function getFavNumber(): Promise<number>{
+  return 29;
+}
+
+getFavNumber().then((num) => {console.log("Fav Number:", num);})
+
+
+const names = ["Alice", "Bob", "Eve"];
+
+names.forEach(function(s){console.log("Names:",s.toUpperCase())});
+
+names.forEach(function(s){console.log("Names:",s.toLowerCase());});
+
+function printCoord(pt:{x:number, y:number}){     
+  console.log("The coordinate's x value is " + pt.x);
+  console.log("The coordinate's x value is " + pt.y);
+}
+printCoord({x: 3, y: 7});
